@@ -3,6 +3,8 @@ package com.example.library.service;
 import com.example.library.model.Book;
 import com.example.library.model.BorrowTransaction;
 import com.example.library.model.Member;
+import com.example.library.util.JsonUtil;
+import com.fasterxml.jackson.core.JsonProcessingException;
 
 import java.time.LocalDate;
 import java.util.Map;
@@ -36,6 +38,13 @@ public class LibraryService {
         transaction.setBorrowDate(LocalDate.now());
         transaction.setDueDate(LocalDate.now().plusWeeks(2));
         transactionRepository.put(transaction.getTransactionId(), transaction);
+
+        try {
+            String json = JsonUtil.toJson(transaction);
+            System.out.println("Serialized transaction to JSON: " + json);
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
         return true;
     }
 
