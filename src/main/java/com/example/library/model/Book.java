@@ -1,4 +1,4 @@
-package main.java.com.example.library.model;
+package com.example.library.model;
 
 public class Book {
     private final String isbn;

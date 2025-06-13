@@ -1,9 +1,9 @@
 package tests.java.com.example.library.service;
 
-import main.java.com.example.library.model.Book;
-import main.java.com.example.library.model.BorrowTransaction;
-import main.java.com.example.library.model.Member;
-import main.java.com.example.library.service.LibraryService;
+import com.example.library.model.Book;
+import com.example.library.model.BorrowTransaction;
+import com.example.library.model.Member;
+import com.example.library.service.LibraryService;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

@@ -1,4 +1,4 @@
-package main.java.com.example.library.model;
+package com.example.library.model;
 
 public class Member {
     private final String memberId;

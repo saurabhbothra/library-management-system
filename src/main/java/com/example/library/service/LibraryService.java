@@ -1,8 +1,8 @@
-package main.java.com.example.library.service;
+package com.example.library.service;
 
-import main.java.com.example.library.model.Book;
-import main.java.com.example.library.model.BorrowTransaction;
-import main.java.com.example.library.model.Member;
+import com.example.library.model.Book;
+import com.example.library.model.BorrowTransaction;
+import com.example.library.model.Member;
 
 import java.time.LocalDate;
 import java.util.Map;
