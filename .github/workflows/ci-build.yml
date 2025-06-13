@@ -3,9 +3,9 @@ name: Java CI Build
 on:
   workflow_dispatch:
   push:
-    branches: [ ci-build ]
+    branches: [ ci-build-dependency ]
   pull_request:
-    branches: [ ci-build ]
+    branches: [ ci-build-dependency ]
 
 jobs:
   build:
